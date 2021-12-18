@@ -27,5 +27,6 @@
 			"**/.mypy_cache": true
 		},
 		"pythonTestExplorer.testFramework": "pytest",
+		"autoDocstring.includeExtendedSummary": true,
 	}
 }
