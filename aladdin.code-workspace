@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"remoteHub.richNavigation.enabled": true,
+		"files.autoSave": "afterDelay",
+		"editor.bracketPairColorization.enabled": true,
+		"merge-conflict.autoNavigateNextConflict.enabled": true,
+		"pip-manager.source": "pypi",
+		"python.analysis.completeFunctionParens": true,
+		"python.analysis.typeCheckingMode": "basic",
+		"vsintellicode.features.python.deepLearning": "enabled",
+		"python.formatting.provider": "yapf",
+		"python.formatting.yapfArgs": [
+			"--style={based_on_style: google, column_limit: 120}"
+		],
+		"python.sortImports.args": [
+			"-rc",
+			"--atomic",
+			"--profile=hug"
+		],
+		"editor.formatOnSave": true,
+		"files.exclude": {
+			"**/.mypy_cache": true
+		},
+		"pythonTestExplorer.testFramework": "pytest",
+		"autoDocstring.includeExtendedSummary": true,
+	}
+}
