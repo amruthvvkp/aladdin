@@ -1,7 +1,1 @@
-fastapi
-pydantic
-starlette
-uvicorn
-email-validator
-python-dotenv
-requests
+fastapi[all]
