@@ -1,3 +1,7 @@
 .venv
+.testplan
+.prefect
 *.pyc
-*.egg-info/*
+*.egg-info
+.mypy_cache
+dask-worker-space

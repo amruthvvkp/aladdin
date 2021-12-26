@@ -1,3 +1,17 @@
+[![GitHub contributors](https://img.shields.io/github/contributors/amruthvvkp/aladdin)](https://github.com/amruthvvkp/aladdin/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/amruthvvkp/aladdin)](https://github.com/amruthvvkp/aladdin/blob/master/LICENSE)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/amruthvvkp/aladdin/master)
+![GitHub language count](https://img.shields.io/github/languages/count/amruthvvkp/aladdin)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/prefect)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/amruthvvkp/aladdin)
+![GitHub last commit](https://img.shields.io/github/last-commit/amruthvvkp/aladdin)
+
+[![GitHub issues](https://img.shields.io/github/issues/amruthvvkp/aladdin)](https://github.com/amruthvvkp/aladdin/issues)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/amruthvvkp/aladdin)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/amruthvvkp/aladdin)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/amruthvvkp/aladdin)
+![GitHub milestones](https://img.shields.io/github/milestones/all/amruthvvkp/aladdin)
+
 # Aladdin - Automated Learning and Autonomous Distributed Diversified Investment Network
 
 Aladdin is a model designed to trade using the user's trading account just the way the user does it. This is not a replacement of human effort but an assisted trading to the actual human effort.
@@ -11,40 +25,48 @@ This project is being developed on Python 3.8. Install the latest version of Pyt
 Considering you have already installed Python 3.8 on your machine, proceed with the below steps.
 
 #### Create blank virtual environment at project root
-You need a working venv based off Python 3.8 to get started.
+You need a working virtual environment based off Python 3.8 to get started.
 
 If you are on Linux/Mac OS/WSL
-```ps
+```bash
 python3 -m venv .venv
 ```
 If you are on Windows
-```ps
+```bash
 python3 -m venv .venv
 ```
 
 Upgrade pip to avoid any keylogging
-```ps
+```bash
 python -m pip install --upgrade pip
 ```
 
 #### Install from requirements file
-The project houses a requirements.txt for production requirements and requirements-dev.txt for development requirement.
+The project houses a requirements.txt for production requirements, requirements-dev.txt for development and requirements-test.txt for testing requirements.
 
 If you are looking to contribute to the project - 
-```ps
+```bash
 cd <project root>
 pip install --upgrade -r requirements-dev.txt
 ```
 
 If you are looking to run the application - 
-```ps
+```bash
 cd <project root>
 pip install --upgrade -r requirements.txt
 ```
 
+If you are looking to test the application - 
+```bash
+cd <project root>
+pip install --upgrade -r requirements-test.txt
+```
+
+Environments created in the project root under the names .venv or .prefect or .testplan are automatically recognized with the configuration under .gitignore file. Any other names used for the Python virtual environment has to be added under ```.git/info/exclude``` file locally for Git to avoid tracking the files under the created virtual environment if the folder resides under the project root.
+
 #### Install package as editable - ONLY FOR DEVELOPMENT
 Once done - you might have to install this application package as an editable project to your venv.
-```ps
+```bash
 pip install -e .
 ```
 
@@ -52,6 +74,28 @@ I've been using both Windows and WSL on Windows 11 to develop and test the appli
 
 ### Dependencies
 All dependencies can be found under ```requirements.txt``` or ```requirements-dev.txt```.
+
+### Pre-Requisites
+Prefect Orion requires SQLite to be installed.
+
+If you are on Ubuntu, run this from your terminal - 
+```bash
+sudo apt update
+sudo apt install sqlite3
+sqlite3 --version
+```
+
+If you are on windows, follow the below steps - 
+
+1. From SQLite [download page](https://www.sqlite.org/download.html) download the binaries under the windows section.
+2. Download ```sqlite-shell-win32-*.zip``` and ```sqlite-dll-win32-*.zip``` zipped files.
+3. Create a folder ```C:\sqlite``` and unzip above two zipped files in this folder, which will give you sqlite3.def, sqlite3.dll and sqlite3.exe files.
+4. Add ```C:\sqlite``` in your *PATH* environment variable and finally go to the command prompt.
+5. Open a terminal window and type in ```sqlite3``` which should show the sqlite version.
+
+
+Please note that we need a minimum version of sqlite 3.24.0 or above for Prefect Orion to work properly.
+
 
 ### IDE Settings
 My preferred IDE is Visual Studio Code and I am keeping all my IDE settings under a .vscode folder in the project root. I am using YAPF for formatting, mypy and SonarLint for code linting and style checking. All the extensions that are recommended for this project can be found in the workspace recommendation file - ```.vscode/extensions.json```.
@@ -67,12 +111,13 @@ If you are contributing to the project, consider using the launch.json configura
 
 If you are looking to run this application as a service, you can start the API server with Uvicorn.
 Assuming your venv is activated and you are at the project root on your terminal - 
-```ps
+```bash
 python - m uvicorn aladdin.backend.api.main:app 
 ```
 Once the server starts up navigate to http://127.0.0.1:8000 to open the application or http://127.0.0.1:8000/docs to open the Swagger documentation.
 
 ### Development Strategy
+*Coming Soon*
 
 #### Architecture
 This project is built on top of [FastAPI](https://fastapi.tiangolo.com/), [Prefect](https://www.prefect.io/). Any supporting libraries could add up as dependencies.
@@ -105,3 +150,7 @@ This project is built on top of [FastAPI](https://fastapi.tiangolo.com/), [Prefe
 * Target autonomous trading with the entire data set that we have in place.
 * Full fledged alert based model that helps in reducing the risk of autonous trading.
 * Complete end-to-end testing and cloud based delivery.
+
+
+## Credits
+* Github badges by [Shields.IO](https://shields.io/)
