@@ -112,9 +112,9 @@ If you are contributing to the project, consider using the launch.json configura
 If you are looking to run this application as a service, you can start the API server with Uvicorn.
 Assuming your venv is activated and you are at the project root on your terminal - 
 ```bash
-python - m uvicorn aladdin.backend.api.main:app 
+prefect orion start 
 ```
-Once the server starts up navigate to http://127.0.0.1:8000 to open the application or http://127.0.0.1:8000/docs to open the Swagger documentation.
+Once the server starts up navigate to http://127.0.0.1:4200 to open the application or http://127.0.0.1:4200/docs to open the Swagger documentation.
 
 ### Development Strategy
 *Coming Soon*
