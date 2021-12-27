@@ -5,14 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: FastAPI",
+            "name": "Python: Module",
             "type": "python",
             "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "aladdin.backend.api.main:app"
-            ],
-            "jinja": true
+            "module": "aladdin.prefect_example"
         }
     ]
 }

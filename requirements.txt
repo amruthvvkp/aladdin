@@ -1,1 +1,1 @@
-fastapi[all]
+prefect>=2.0.0a
