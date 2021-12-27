@@ -1,11 +1,13 @@
 from fastapi import FastAPI
 import config
 
-app = FastAPI(title=config.settings.api_settings.title,
-              version=config.settings.api_settings.version,
-              description=config.settings.api_settings.description)
+app = FastAPI(
+    title=config.settings.api_settings.title,
+    version=config.settings.api_settings.version,
+    description=config.settings.api_settings.description,
+)
 
 
-@app.get('/')
+@app.get("/")
 def root():
-    return {'message': 'Welcome to Aladdin'}
+    return {"message": "Welcome to Aladdin"}

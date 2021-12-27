@@ -3,10 +3,10 @@
 from setuptools import setup
 import config
 
-with open("README.md", 'r') as f:
+with open("README.md", "r") as f:
     long_description = f.read()
 
-with open('LICENSE') as f:
+with open("LICENSE") as f:
     license = f.read()
 
 setup(
