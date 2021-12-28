@@ -28,5 +28,6 @@
 		},
 		"pythonTestExplorer.testFramework": "pytest",
 		"autoDocstring.includeExtendedSummary": true,
+		"git.ignoreLimitWarning": true,
 	}
 }
