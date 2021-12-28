@@ -14,19 +14,12 @@
 		"python.analysis.typeCheckingMode": "basic",
 		"vsintellicode.features.python.deepLearning": "enabled",
 		"python.formatting.provider": "yapf",
-		"python.formatting.yapfArgs": [
-			"--style={based_on_style: google, column_limit: 120}"
-		],
-		"python.sortImports.args": [
-			"-rc",
-			"--atomic",
-			"--profile=hug"
-		],
 		"editor.formatOnSave": true,
 		"files.exclude": {
 			"**/.mypy_cache": true
 		},
 		"pythonTestExplorer.testFramework": "pytest",
 		"autoDocstring.includeExtendedSummary": true,
+		"git.ignoreLimitWarning": true,
 	}
 }
