@@ -1,4 +1,4 @@
-version = 1.1
+version = 1
 
 test_patterns = ["tests/**"]
 
@@ -6,12 +6,11 @@ exclude_patterns = ["notebooks/**"]
 
 [[analyzers]]
 name = "test-coverage"
-enabled = false
+enabled = true
 
 [[analyzers]]
 name = "python"
 enabled = true
-dependency_file_paths = ["requirements.txt","requirements-dev.txt","requirements-test.txt"]
 
   [analyzers.meta]
   runtime_version = "3.x.x"
