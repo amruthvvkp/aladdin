@@ -6,10 +6,9 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/amruthvvkp/aladdin)
 ![GitHub last commit](https://img.shields.io/github/last-commit/amruthvvkp/aladdin)
 
-[![GitHub issues](https://img.shields.io/github/issues/amruthvvkp/aladdin)](https://github.com/amruthvvkp/aladdin/issues)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/amruthvvkp/aladdin)
+[![DeepSource](https://deepsource.io/gh/amruthvvkp/aladdin.svg/?label=active+issues&show_trend=true&token=PdJ1ceHD-PbR2IuoxspR-iGx)](https://deepsource.io/gh/amruthvvkp/aladdin/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/amruthvvkp/aladdin.svg/?label=resolved+issues&show_trend=true&token=PdJ1ceHD-PbR2IuoxspR-iGx)](https://deepsource.io/gh/amruthvvkp/aladdin/?ref=repository-badge)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/amruthvvkp/aladdin)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/amruthvvkp/aladdin)
 ![GitHub milestones](https://img.shields.io/github/milestones/all/amruthvvkp/aladdin)
 
 # Aladdin - Automated Learning and Autonomous Distributed Diversified Investment Network
