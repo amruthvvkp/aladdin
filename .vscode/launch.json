@@ -10,6 +10,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/tests/testplan/test_plan.py",
       "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.testplan/bin/python",
       "args": []
     },
 
