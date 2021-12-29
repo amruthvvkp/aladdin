@@ -50,25 +50,35 @@ python -m pip install --upgrade pip
 
 The project houses a requirements.txt for production requirements, requirements-dev.txt for development and requirements-test.txt for testing requirements.
 
-If you are looking to contribute to the project -
+If you are looking to contribute to the Aladdin engine -
 
 ```bash
 cd <project root>
-pip install --upgrade -r requirements-dev.txt
+pip install --U -r aladdin/engine/requirements.txt
+pip install -e .
+```
+
+If you are looking to contribute to the Aladdin engine -
+
+```bash
+cd <project root>
+pip install --U -r aladdin/app/requirements.txt
+pip install -e .
 ```
 
 If you are looking to run the application -
 
 ```bash
 cd <project root>
-pip install --upgrade -r requirements.txt
+pip install -e .
 ```
 
-If you are looking to test the application -
+If you are looking to build testplan supported tests for testing Aladdin changes -
 
 ```bash
 cd <project root>
-pip install --upgrade -r requirements-test.txt
+pip install --U -r tests/testplan/requirements.txt
+pip install -e .
 ```
 
 Environments created in the project root under the names .venv or .prefect or .testplan are automatically recognized with the configuration under .gitignore file. Any other names used for the Python virtual environment has to be added under `.git/info/exclude` file locally for Git to avoid tracking the files under the created virtual environment if the folder resides under the project root.
