@@ -1,0 +1,19 @@
+# FastAPI requirements
+fastapi
+uvicorn[standard]
+python-dotenv
+jinja2
+
+# Additional utilities
+loguru
+pendulum
+requests
+
+# VS Code Requirements
+yapf
+mypy
+jupyter
+isort
+
+# Unit Testing
+pytest

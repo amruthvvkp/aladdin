@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from aladdin.backend.api.main import app
+from aladdin.app.main import app
 
 client = TestClient(app)
 

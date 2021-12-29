@@ -6,3 +6,9 @@ atomic = true
 based_on_style = "google"
 column_limit = "120"
 split_before_logical_operator = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+filterwarnings = ["error"]
+testpaths = ["tests"]

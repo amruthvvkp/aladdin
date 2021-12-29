@@ -1,7 +1,13 @@
--r requirements.txt
+# Prefect Orion
+prefect>=2.0.0a
 
 # Prefect debugging requirements
-bokeh >= 2.1.1
+bokeh>=2.1.1
+
+# Additional utilities
+loguru
+pendulum
+requests
 
 # VS Code Requirements
 yapf
