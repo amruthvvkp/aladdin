@@ -28,7 +28,7 @@
       "name": "Python: Prefect Flows",
       "type": "python",
       "request": "launch",
-      "module": "aladdin.flows.prefect_example",
+      "module": "aladdin.engine.prefect_example",
       "python": "${workspaceFolder}/.prefect/bin/python"
     }
   ]
