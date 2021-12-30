@@ -1302,10 +1302,7 @@ def do_vcs_install(manifest_in, versionfile_source, ipy):
     try:
         with open(".gitattributes", "r") as fobj:
             for line in fobj:
-                if (
-                    line.strip().startswith(versionfile_source)
-                    and "export-subst" in line.strip().split()[1:]
-                ):
+                if (line.strip().startswith(versionfile_source) and "export-subst" in line.strip().split()[1:]):
                     present = True
                     break
     except OSError:
