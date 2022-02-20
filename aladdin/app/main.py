@@ -3,11 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 import sys
 from pathlib import Path
+
 _app_root = str(Path(__file__).parent.parent.parent.absolute())
 if _app_root not in sys.path:
     sys.path.append(_app_root)
-
-
 
 import aladdin
 from aladdin.app.core.config import settings
@@ -24,6 +23,7 @@ app.add_middleware(
 )
 
 app.include_router(dummy.router)
+
 
 @app.get('/')
 def root():
