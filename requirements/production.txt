@@ -1,3 +1,5 @@
+wheel
+
 # FastAPI requirements
 fastapi
 uvicorn[standard]
@@ -8,12 +10,5 @@ jinja2
 loguru
 pendulum
 requests
-
-# VS Code Requirements
-yapf
-mypy
-jupyter
-isort
-
-# Unit Testing
-pytest
+pydantic
+arrow

@@ -20,16 +20,9 @@
       "request": "launch",
       "module": "uvicorn",
       "cwd": "${workspaceFolder}/aladdin/app",
-      "python": "${workspaceFolder}/.fastapi/bin/python",
+      "python": "${workspaceFolder}/.aladdin_venv/bin/python",
       "args": ["main:app"],
       "jinja": true
-    },
-    {
-      "name": "Python: Prefect Flows",
-      "type": "python",
-      "request": "launch",
-      "module": "aladdin.engine.prefect_example",
-      "python": "${workspaceFolder}/.prefect/bin/python"
     }
   ]
 }

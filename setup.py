@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='aladdin',
-    packages=find_packages(include=('aladdin', 'tests')),
+    packages=find_packages(include=('aladdin')),
     url='https://github.com/amruthvvkp/aladdin',
     description='Aladdin - Automated Learning and Autonomous Distributed Diversified Investment Network - '
     'is a model designed to trade using the user\'s Demat account just the way the user does it. '
