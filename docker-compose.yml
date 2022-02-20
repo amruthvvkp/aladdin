@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  aladdin:
+    container_name: aladdin_fastapi_app
+    image: aladdin
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+  grafana:
+    image: grafana/grafana-oss
+    ports:
+      - 3000:3000

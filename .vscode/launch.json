@@ -1,14 +1,29 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Module",
-            "type": "python",
-            "request": "launch",
-            "module": "aladdin.prefect_example"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Python: TestPlan",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/tests/testplan/test_plan.py",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.testplan/bin/python",
+      "args": []
+    },
+
+    {
+      "name": "Python: FastAPI",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/aladdin/app",
+      "python": "${workspaceFolder}/.aladdin_venv/bin/python",
+      "args": ["main:app"],
+      "jinja": true
+    }
+  ]
 }

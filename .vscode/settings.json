@@ -1,10 +1,14 @@
 {
-    "python.linting.mypyEnabled": true,
+    "python.linting.mypyEnabled": false,
     "python.linting.enabled": true,
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "cSpell.words": [
-        "uvicorn"
+        "Demat",
+        "pydantic",
+        "uvicorn",
+        "versioneer",
+        "yapf"
     ],
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
 }
