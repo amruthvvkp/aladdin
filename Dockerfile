@@ -30,4 +30,3 @@ USER appuser
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 WORKDIR /aladdin/aladdin
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-RUN pip list
